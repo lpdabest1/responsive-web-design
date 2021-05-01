@@ -1,0 +1,260 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<style>
+  
+  main {
+    background-color: #013369;
+    margin: auto;
+    width: auto;
+    #border-color: white;
+    #border-width: #5px;
+    #border-style: #solid;
+  }
+  
+  h1 {
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+  }
+  
+  h2 {
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+  } 
+  
+  #title {
+    background-color: #D50A0A;
+    background-width: 7px;
+    background-style: solid;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  #description {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding: -30px;
+  }
+  
+  #questionnaire {
+    background-color: #D50A0A;
+    background-width: 7px;
+    background-style: solid;
+    margin: auto;
+    width: 80%;
+  }
+  
+
+  
+  #survey-form {
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 50%;
+    max-height: 100%;
+  }
+  
+  #submit {
+    font-family: sans-serif;
+    background-color: green;
+    color: white;
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 100%;
+    height: 30px;
+    max-height: 100%;
+    border-radius: 20px;
+  }
+  
+  #number {
+    position: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  
+  #name{
+    position: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  
+  #email {
+    position: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    
+    
+  }
+  #radio-buttons {
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  
+  #dropdown {
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+  }
+
+  #best-players {
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;    
+  }
+  
+  #comments {
+    position: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  #nfl-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    max-width: 100%;
+    height: 100px;
+    max-height: 100%;
+    
+  }
+  
+  .centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  
+  .text-color {
+    color: white;
+  }
+  
+  
+</style>
+
+<main>
+  <h1 id="title"><p style="color: white" > Survey: National Football League Questionnaire</p>
+    <p id="description" style="color: white"> Thanks for your time to support the NFL Fandom</p></h1>
+  <h2 id="questionnaire">
+      <section>
+      <form id="survey-form">
+        
+        
+        <!--- code for name, email, and age (as well their labels) -->
+          <label class= "text-color centered" id="name-label" for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required><br>
+      
+          <label class= "text-color centered" id="email-label" for="Email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter an Email" required><br>
+        
+          <label class= "text-color centered" id="number-label" for="number">Age:</label>
+          <input type="number" id="number" name="number" min="0" max="100" placeholder="Enter an Age" required><br>
+        
+        
+        <!--- Code for favorite position (dropdown) -->
+          <div id ="dropdown" class= "text-color dropdown" for="dropdown">Which Offensive Position is your favorite?</l><br>
+          <select  name="dropdown" placeholder="Select a position" required>
+            <option id="select-holder" value="" disabled selected> Select a(n) option</option>
+            <option value="Quaterback">Quarterback (QB)</option>
+            <option value="Running-Back">Running-Back (RB)</option>
+            <option value="Full-Back">Full-Back (FB)</option>
+            <option value="Wide-Receiver">Wide-Receiver (WR)</option>
+            <option value="Tight-End">Tight-End (TE)</option>
+            <option value="Offensive-Line">Offensive-Line (OL)</option>
+        </select>
+        </div><br>
+        
+        
+        <!--- code for which NFC East team is the best (radio buttons) --> 
+        <!---<p style="color:white">Which of the following is your favorite team in the NFC EAST?</p> -->
+        
+        <div id="radio-buttons" class="text-color" for="radio-buttons">Which NFC East Team is your favorite?<br>
+        <input id="Dallas-Cowboys" type="radio" name="levels" value="Dallas Cowboys">
+        <label for="Dallas Cowboys">Dallas Cowboys</label><br>
+        <input id="New-York-Giants" type="radio" name="levels" value="New York Giants">
+        <label for="New York Giants">New York Giants</label><br>        
+        <input id="Philadelphia-Eagles" type="radio" name="levels" value="Philadelphia Eagles">
+        <label for="Philadelphia Eagles">Philadelphia Eagles</label><br>        
+        <input id="Washington-Football-Team" type="radio" name="levels" value="Washington Football Team">
+        <label for="Washington Football Team">Washington Football Team</label><br>          
+        </div><br>  
+        
+        <!--- Question involving multiple checkboxes -->
+        <div id="best-players" class="text-color" for="players">Which of the players listed below are Top 5 in the NFL?<span style="font-size:15px; color: #999"> (Check all that apply)</span><br>
+        <label><input type="checkbox" name="top-5" value="Tom Brady" > Tom Brady</label><br>
+        <label><input type="checkbox" name="top-5" value="Aaron Rodgers"> Aaron Rodgers</label><br>
+        <label><input type="checkbox" name="top-5" value="Patrick Mahomes"> Patrick Mahomes</label><br>
+        <label><input type="checkbox" name="top-5" value="Julio Jones"> Julio Jones</label><br>
+        <label><input type="checkbox" name="top-5" value="Aaron Donald"> Aaron Donald</label><br>
+        <label><input type="checkbox" name="top-5" value="Dak Prescott"> Dak Prescott</label><br>
+        <label><input type="checkbox" name="top-5" value="Christian McCaffrey"> Christian McCaffrey</label><br>
+        <label><input type="checkbox" name="top-5" value="Rob Gronkowski"> Rob Gronkowski</label><br>
+        <label><input type="checkbox" name="top-5" value="Lamar Jackson"> Lamar Jackson</label><br>
+        </div><br>
+          
+        <!--additional comments code -->
+        <div id="comments" >
+          <label for ="comments">Additional Comments</label><br>
+         <textarea placeholder="Enter Additional Comments">
+         </textarea>
+        </div>
+        
+         <!--- Submit Button -->
+         <input id ="submit" type="submit" name="submit" value="Submit" style="font-size: 20px">
+       </form>
+    </section>
+        </h2>
+     <!-- The addition of a logo to the bottom margin of the survery -->   
+      <img id="nfl-logo" src="https://shsroundtable.com/wp-content/uploads/2014/11/nfl-logo-blue-607x370.jpg" alt="NFL Logo">
+        
+        
+     
+  
+</main>
