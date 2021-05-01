@@ -1,0 +1,166 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link  rel="stylesheet"
+  href="mystyle.css"/>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<nav id="navbar">
+  <header id="header-text-color">Python 3 Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li><a class="nav-link" href="#Summary">Summary</a>
+      </li>
+      <li><a class="nav-link" href="#Python">Python</a>
+      </li>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a> </li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#If_and_Else_Statements">If and Else Statements</a></li>
+      <li><a class="nav-link" href="#While_and_For_Loops">While and For Loops</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#References">References</a></li></ul>  
+        </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          Python is a dynamic, interpreted, and object oriented programming language. Since it's creation by Guido van Rossum and it's initial release in 1991, Python has been used to complete the following tasks:</p>
+          <ul>
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>Data Science and Visualization</li>
+            <li>Machine Learning and Artificial Intelligence</li>
+            <li>Mathematics</li>
+            <li>Scripting</li>
+        </ul>
+        <p>
+        </p>
+      </article>
+        </section>     
+   <section class="main-section" id="Summary">
+     <header>Summary</header>
+     <article>
+       <p>
+         The following topics below are provided to give an individual the basics in helping them being accustomed and to their overall understanding of Python.</p></article></section>
+    <section class="main-section" id="Python">
+      <header>Python</header>
+      <article>
+        <p>Before diving in and learning more of the ais when it comes to Python, let's go over a few pointers worth mentioning. The most recent and versatile version of Python available at the moment is Python 3. The former, Python 2, will no longer be receiving any more security updates (although it is still popular amongst many). Therefore, we will soley focus on using Python 3 for this tutorial/documentation of Python. Furthermore, during this tutorial, if you would like to use an IDLE (Integrated Development and Learning Environment) while learning to further develop your understanding of the basics of Python, I recommend using Pycharm, Thonny, etc., throughout this tutorial.
+        </p></article></section>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <article>
+        <p>The first lesson in using python to code/create will be to output the string "Hello World". To do this, we will be using the data type string and the print function. To print a string, we must have whatever we want to print to the screen (e.g. Hello World) surrounded by either single or double quotation marks. For example, to print Hello World, we must code "Hello World". Now in order to print Hello World, we must put our string into a print() function such as (e.g. print("Hello World")).
+          <code><br>print("Hello World")</code><br>
+          
+        </p></article></section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+        <p>Variables are in essence, reallocation of memory that is used to store information such as data. In Python, a variable is created by assigning a value to it. <code><br>x = 30<br>y = "Billy"<br>z = 3x</code>Unlike java and other programming languages, variables in Python do not necessarily need to be declared or even have a(n) particular assigning of data types to them (which we will go over a bit later).<code><br>x = 30     #no int needed<br>y = "Billy"    #no string needed<br>z = 3x     #no int needed</code> 
+        </p></article></section>
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <article>
+        <p>Variables can store various different data types. Python has the following data types by default, grouped up and categorized accordingly:</p>
+          <ul>
+            <li>Text Type(s): str</li>
+            <li>Numeric Type(s): int, float, complex</li>
+            <li>Sequence Type(s): list, tuple, range</li>
+            <li>Mapping Type: dict</li>
+            <li>Set Type: set</li>
+            <li>Boolean Type: bool</li>
+            <li>Binary Type(s): bytes, bytearray, memoryview</li></ul>
+        <p>You can set up the data type to variables as such:<code>
+          <br>x = str("Hello World")
+          <br>x = int(5)
+          <br>y = float(32.7)
+          <br>z = list(("one","two","three","four"))
+          </code></p>
+        </article></section>
+    <section class="main-section" id="If_and_Else_Statements">
+      <header>If and Else Statements</header>
+      <article>
+        <p>If Statements are used when the code you are writing requires a(n) condition. An example below provides a way in which an if statement can done in code:</p><p>
+          <code>
+             <br>a = 40
+             <br>b = 5
+              <br>if b &lt a:
+              <br>print(str(b) + " is less than " + str(a))
+          </code>
+        </p>
+        <p>In this example we use two variables (a and b) to test whether b is less than a with an if statement. As is, a is 40, and b is 5. Since 5 is less than 40, we print to screen that "5 is less than 40".</p>
+        <p>Else Statements are used as a method to catcth/solve any corner cases which do not follow the remaining conditions. An example below provides a way in which you can incorporate an else statement into your code.</p><p><code>
+        <br>a = 40
+        <br>b = 5
+        <br>if b &gt a:
+        <br>print(str(b) + " is greater than " + str(a))
+        <br>else:
+        <br>  print(str(b) + " is less than " + str(a))
+        </code>In this example we are still using the two variables a and b; however, this time the if statement is asking "if" variable b is greater than a. Is 5 greater than 40? No, of course not. Thus, we go to the else statement and print to the screen 5 is less than 40 (which is true).</p>
+      </article></section>
+    <section class="main-section" id="While_and_For_Loops">
+      <header>While and For Loops</header>
+      <article>
+        <p>In Python, there are two basic loop commands:</p>
+        <ul>
+          <li>While loops</li>
+          <li>For loops</li>
+        </ul>
+        <p font-size="2em">While Loops</p>
+        <p> The While loop can perform a set of statements as long as the condition is true. For our example, we will print j for as long as j is less than 4.
+        <code><br>
+        j = 0<br>
+        while j &lt 4:<br>
+          print(j)<br>
+          j += 1</code></p>
+        <p font-size="2em">For Loops</p>
+        <p> The For loop is used for iteration of lists, tuples, a dictionary, a set, or a string. In the example below, we have a list containing various pizza toppings. We will use a for loop to iterate through the list and print to the screen each pizza topping in the list.
+          <code><br>
+          pizza_toppings =["pepperoni","sausage","mushrooms","ham", "bacon"]<br>
+          for i in pizza_toppings:<br>
+          print(i)
+          </code></p>  
+      
+        </article></section>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+        <p>In Python, a function is a block of code that will only run when it has been called. In addition, functions can have parameters, which are like variables, except they are pertaining to the function. Furthermore, a function can return data as well.</p>
+        <p>When creating a function in Python, we define the function by using the keyword<span style="color:orange"> def</span>. An example below provides a way in which you can define and call a function (so you can use it).</p>
+        <p><code><br>
+          <span style="color:orange">def _our function():</span>
+          print("This is our function")<br><br>
+          <span style="color:orange">our_function()</span>
+          </code></p>
+          <p>In the example above, we defined our function named as <span style="color:orange">our_function</span> where our function returns to the screen "This is our function". Furthermore, data and other information can be stored or passed thourgh into the functions known as parameters/arguments. </p>
+<p>Arguments can be incorporated into the function after the function name, inside of the parentheses. In addition, you can have as many arguments added into your function as you deem plausible; however, they must be separated with a comma.</p>
+<p>In the example below, we are passing in an argument to provide a template as to how this should be completed. Let's call our argument <span style="color:orange">our_name</span>.
+  <code><br>
+  <span style="color:orange">def _our function(our_name):</span>
+    print("This is our function" + our_name)<br><br>
+  <span style="color:orange">our_function("Jim")</span>
+  </code>
+  The code above will output to the screen "This is our function Jim".</p></article></section>
+  
+    <section class="main-section" id="References">
+      <header>References</header>
+      <article>
+        <p>
+          All the information provided in this documentation page are collected from the <a href="https://docs.python.org/3/" alt="Python site" style="color:yellow" >Python Official Website</a> and <a href="https://www.w3schools.com" alt="w3schools" style="color:yellow">w3schools</a>.</p></article></section>
+     
+</main>       
+         
+
+    
+
+ 
