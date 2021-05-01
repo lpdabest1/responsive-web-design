@@ -1,0 +1,125 @@
+/*main code for overall display of the technical documentation page*/
+body{
+  background-color: black;
+  overflow-x: hidden;
+  
+}
+
+#navbar {
+  position: fixed;
+  font-size: 1em;
+  min-height: 400px;
+  width: 100%;
+  background: black;
+  display: grid;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100%;
+  border-right: thick solid white;
+  
+  
+}
+
+
+header {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#navbar ul {
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: black;
+  width: auto;
+  height: 100%;
+  padding: 0;
+  
+}
+
+
+#navbar li {
+  margin: 10px;
+  border-top: thick solid white;
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  
+}
+
+
+
+#header-text-color {
+  color: white;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 20px;
+  
+}
+
+@media (max-width: 400px){
+  #main-doc{
+    #position: relative;
+    margin-left: -10px;
+  }
+  
+  code{
+   width: 100%;
+   padding: 15px;
+   min-width: 200px;
+   margin-left: -30px; 
+   padding-left: 20px;
+   padding-right: 50px;
+  }
+  
+}
+  
+
+
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  font-size: 2em;
+}
+
+#main-doc p {
+  color: white;
+  font-size: 20px;
+}
+
+#main-doc li {
+  color: white;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+#main-doc code {
+
+  display: grid;
+  width: 100%;
+  background-color: #002240;
+  border: solid yellow;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 15px;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
